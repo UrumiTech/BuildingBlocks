@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageLicenseFile>License.md</PackageLicenseFile>
+    <PackageIcon>apple-icon-180x180.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/UrumiTech/BuildingBlocks</PackageProjectUrl>
+    <Copyright>2020 Urumi Tech Limited</Copyright>
+    <RepositoryUrl>https://github.com/UrumiTech/BuildingBlocks</RepositoryUrl>
+    <Description>This project will help anyone who would like to build an application that requires Entity Framework SQL Server Database driven application.</Description>
+    <RepositoryType>Git</RepositoryType>
+    <PackageId>UrumiTech.BuildingBlocks.SqlServer</PackageId>
+    <Authors>Urumi Tech Limited</Authors>
+    <Product>UrumiTech.BuildingBlocks.SqlServer</Product>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BuildingBlocks\BuildingBlocks.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\apple-icon-180x180.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\License.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
