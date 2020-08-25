@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
 
-namespace Phm.MobileSp.BuildingBlocks.Helpers
+namespace BuildingBlocks.SqlServer.Helpers
 {
     public static class InfrastructureHelper
     {

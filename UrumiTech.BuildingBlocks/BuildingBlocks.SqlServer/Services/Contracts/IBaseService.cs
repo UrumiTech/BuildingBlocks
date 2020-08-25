@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using Phm.MobileSp.BuildingBlocks.Contracts.Entities;
 
-namespace BuildingBlocks.Services.Contracts
+namespace BuildingBlocks.SqlServer.Services.Contracts
 {
-    public interface IBaseService<TId, TEntity> 
+    public interface IBaseService<TEntity, TId> 
         where TEntity : IBasicEntity<TId> 
         where TId: struct, IEquatable<TId>
     {

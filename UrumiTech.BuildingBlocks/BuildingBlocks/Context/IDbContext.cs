@@ -1,8 +1,6 @@
-﻿ System;
- System.Threading.Tasks;
- Microsoft.EntityFrameworkCore;
-
-namespace BuildingBlocks.Context
+﻿ using System;
+ using System.Threading.Tasks;
+ namespace BuildingBlocks.Context
 {
     public interface IDbContext : IDisposable
     {

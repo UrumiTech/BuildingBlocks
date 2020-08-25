@@ -1,4 +1,4 @@
-﻿namespace Phm.MobileSp.BuildingBlocks.Filters
+﻿namespace BuildingBlocks.Filters
 {
     public interface IBasicFilter 
     {

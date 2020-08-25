@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Phm.MobileSp.BuildingBlocks.Dto
+namespace BuildingBlocks.Dto
 {
     public class PaginatedResponse<T>
     {

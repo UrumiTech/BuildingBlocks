@@ -2,7 +2,7 @@
 using Phm.MobileSp.BuildingBlocks.Contracts;
 using Phm.MobileSp.BuildingBlocks.Contracts.Entities;
 
-namespace Phm.MobileSp.BuildingBlocks.Entity
+namespace BuildingBlocks.Entity
 {
     public abstract class AuditableEntity<T> : BasicEntity<T>, IAuditableEntity<T> where T : IEquatable<T>, new()
     {

@@ -1,4 +1,4 @@
-﻿namespace Phm.MobileSp.BuildingBlocks.Dto
+﻿namespace BuildingBlocks.Dto
 {
     public class Response<T>
     {

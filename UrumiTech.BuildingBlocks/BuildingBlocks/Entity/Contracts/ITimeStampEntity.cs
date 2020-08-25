@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Phm.MobileSp.BuildingBlocks.Contracts.Entities
+namespace BuildingBlocks.Contracts.Entities
 {
     public interface ITimeStampEntity
     {

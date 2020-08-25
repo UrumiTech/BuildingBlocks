@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using Phm.MobileSp.BuildingBlocks.Contracts;
 using Phm.MobileSp.BuildingBlocks.Contracts.Entities;
 
-namespace Phm.MobileSp.BuildingBlocks.Entity
+namespace BuildingBlocks.Entity
 {
     public abstract class BasicEntity<T> : IBasicEntity<T> where T : IEquatable<T>, new()
     {

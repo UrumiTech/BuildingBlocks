@@ -1,7 +1,7 @@
 ﻿using System;
 using Phm.MobileSp.BuildingBlocks.Entity;
 
-namespace Phm.MobileSp.BuildingBlocks.Contracts.Entities
+namespace BuildingBlocks.Contracts.Entities
 {
   public interface IBaseEntity<T> :IAuditableEntity<T> where T : IEquatable<T>,new()
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Phm.MobileSp.BuildingBlocks.Filters
+namespace BuildingBlocks.Filters
 {
     public class QueryFilter
     {

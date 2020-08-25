@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Threading.Tasks;
 using AutoMapper;
+using BuildingBlocks.Context;
 using BuildingBlocks.Services;
 using Microsoft.EntityFrameworkCore;
-using Phm.MobileSp.BuildingBlocks.Context;
 using Phm.MobileSp.BuildingBlocks.Contracts;
 using Phm.MobileSp.BuildingBlocks.Contracts.Entities;
 using Phm.MobileSp.BuildingBlocks.Services.Contracts;
 
 namespace Phm.MobileSp.BuildingBlocks.Services
 {
-    public abstract class AuditableEntityService<TId, TEntity> : BaseService<TId,TEntity>, IAuditableEntityService<TId, TEntity>
+    public abstract class AuditableEntityService< TEntity, TId> : global::BuildingBlocks.SqlServer.Services.BaseService<TEntity, TId>, global::BuildingBlocks.SqlServer.Services.Contracts.IAuditableEntityService<TEntity, TId>
         where TEntity : class, IAuditableEntity<TId>, new()
         where TId : struct, IEquatable<TId>
     {
 
-        public AuditableEntityService(IDbContext context, IMapper mapper):base(context, mapper)
+        public AuditableEntityService(DbContext context):base(context)
         {
             
         }

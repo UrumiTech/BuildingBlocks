@@ -1,22 +1,24 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
-using BuildingBlocks.Context;
+using BuildingBlocks.SqlServer.Helpers;
 using Phm.MobileSp.BuildingBlocks.Contracts.Entities;
-using Phm.MobileSp.BuildingBlocks.Services.Contracts;
+using BuildingBlocks.SqlServer.Services.Contracts;
+using Microsoft.EntityFrameworkCore;
 
-namespace BuildingBlocks.Services
+namespace BuildingBlocks.SqlServer.Services
 {
-    public abstract class BaseService<TId, TEntity> : IBaseService<TId, TEntity>
+    public abstract class BaseService<TEntity, TId> : IBaseService<TEntity, TId>
         where TEntity : class, IBasicEntity<TId>, new()
         where TId : struct, IEquatable<TId>
     {
-        protected readonly IDbContext Context;
-        protected readonly IMapper Mapper;
+        protected readonly DbContext Context;
 
-        protected BaseService(IDbContext context, IMapper mapper)
+
+        protected BaseService(DbContext context)
         {
             Context = context;
-            Mapper = mapper;
+
         }
         public virtual async Task<TId> Add(TEntity entity)
         {
@@ -32,8 +34,8 @@ namespace BuildingBlocks.Services
             var element = await GetById(id);
             if (element == null)
                 return await Task.FromResult(false);
-           
-            Context.Instance.Entry(element).CurrentValues.SetValues(entity);
+
+            Context.Entry(element).CurrentValues.SetValues(entity);
             await Context.SaveChangesAsync();
             return await Task.FromResult(true);
         }
@@ -52,13 +54,13 @@ namespace BuildingBlocks.Services
             {
                 return await elements.FirstOrDefaultAsync();
             }
-            
+
             return await elements.FirstOrDefaultAsync();
         }
 
         public virtual async Task<bool> HardDelete(TId id)
         {
-            Context.Instance.Remove(Context.Instance.FindTracked<TEntity>(id) ?? new TEntity { Id = id });
+            Context.Remove(Context.FindTracked<TEntity>(id) ?? new TEntity { Id = id });
             await Context.SaveChangesAsync();
             return await Task.FromResult(true);
         }
