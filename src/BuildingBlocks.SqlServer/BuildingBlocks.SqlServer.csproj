@@ -14,8 +14,8 @@
     <Authors>Urumi Tech Limited</Authors>
     <Product>UrumiTech.BuildingBlocks.SqlServer</Product>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
   </ItemGroup>

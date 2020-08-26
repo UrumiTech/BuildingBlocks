@@ -13,8 +13,8 @@
     <PackageProjectUrl>https://github.com/UrumiTech/BuildingBlocks</PackageProjectUrl>
     <RepositoryUrl>https://github.com/UrumiTech/BuildingBlocks</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.0.0" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
