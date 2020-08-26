@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <PackageId>UrumiTech.BuildingBlocks</PackageId>
     <Authors>Urumi Tech</Authors>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageIcon>apple-icon-180x180.png</PackageIcon>
     <Product>Urumi Tech Building Blocks</Product>
     <Description>This nuget package has the basic set of classes and interfaces to get a Data driven project going.</Description>
