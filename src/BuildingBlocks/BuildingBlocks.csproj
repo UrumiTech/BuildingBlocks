@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageId>UrumiTech.BuildingBlocks</PackageId>
+    <Authors>Urumi Tech</Authors>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageIcon>apple-icon-180x180.png</PackageIcon>
+    <Product>Urumi Tech Building Blocks</Product>
+    <Description>This nuget package has the basic set of classes and interfaces to get a Data driven project going.</Description>
+    <Copyright>2020 Urumi Tech Limited</Copyright>
+    <PackageLicenseFile>License.md</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/UrumiTech/BuildingBlocks</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/UrumiTech/BuildingBlocks</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\apple-icon-180x180.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\License.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

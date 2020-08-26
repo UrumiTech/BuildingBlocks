@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AB7E3E16-3038-47AD-BD20-4EED449CA8C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C62D6BB4-0C50-4A83-BADC-AC6C2A90E415}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EDC4CE7-53D5-47BD-8FA5-219FF5BF0CB3}"
+	ProjectSection(SolutionItems) = preProject
+		..\apple-icon-180x180.png = ..\apple-icon-180x180.png
+		build-master.yml = build-master.yml
+		..\LICENSE = ..\LICENSE
+		..\License.md = ..\License.md
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks.csproj", "{1FB31346-3A6D-4329-AF8E-8C44EC942593}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks.SqlServer", "BuildingBlocks.SqlServer\BuildingBlocks.SqlServer.csproj", "{CC660BF8-FEFC-4D27-BC89-0DD253AE6D47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FB31346-3A6D-4329-AF8E-8C44EC942593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB31346-3A6D-4329-AF8E-8C44EC942593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB31346-3A6D-4329-AF8E-8C44EC942593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB31346-3A6D-4329-AF8E-8C44EC942593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC660BF8-FEFC-4D27-BC89-0DD253AE6D47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC660BF8-FEFC-4D27-BC89-0DD253AE6D47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC660BF8-FEFC-4D27-BC89-0DD253AE6D47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC660BF8-FEFC-4D27-BC89-0DD253AE6D47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1FB31346-3A6D-4329-AF8E-8C44EC942593} = {AB7E3E16-3038-47AD-BD20-4EED449CA8C1}
+		{CC660BF8-FEFC-4D27-BC89-0DD253AE6D47} = {AB7E3E16-3038-47AD-BD20-4EED449CA8C1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49ECBCEA-76D9-4D3A-A094-2AC44D9C2239}
+	EndGlobalSection
+EndGlobal
