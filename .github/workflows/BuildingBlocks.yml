@@ -24,4 +24,4 @@ jobs:
           PROJECT_FILE_PATH: src/BuildingBlocks/BuildingBlocks.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
           PACKAGE_NAME: UrumiTech.BuildingBlocks
-          VERSION_REGEX: <Version>(.*)<\/Version>
+          VERSION_REGEX: <AssemblyVersion>(.*)<\/AssemblyVersion>
