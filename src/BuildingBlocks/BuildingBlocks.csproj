@@ -3,10 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <PackageId>UrumiTech.BuildingBlocks</PackageId>
-    <Authors>Urumi Tech</Authors>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Urumi Tech Limited</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageIcon>apple-icon-180x180.png</PackageIcon>
-    <Product>Urumi Tech Building Blocks</Product>
+    <Product>Urumi Tech - Building Blocks</Product>
     <Description>This nuget package has the basic set of classes and interfaces to get a Data driven project going.</Description>
     <Copyright>2020 Urumi Tech Limited</Copyright>
     <PackageLicenseFile>License.md</PackageLicenseFile>
@@ -14,7 +14,10 @@
     <RepositoryUrl>https://github.com/UrumiTech/BuildingBlocks</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     <Deterministic>true</Deterministic>
-  </PropertyGroup>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <OutputType>Library</OutputType>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.0.0" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />

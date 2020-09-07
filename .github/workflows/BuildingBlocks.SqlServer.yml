@@ -1,4 +1,4 @@
-name: Publish Building Block Packages
+name: Publish Building Blocks Sql Server Package
 
 on:
   push:
@@ -21,7 +21,8 @@ jobs:
     - name: Publish BuildingBlocks
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
-          PROJECT_FILE_PATH: src/BuildingBlocks/BuildingBlocks.csproj
+          PROJECT_FILE_PATH: src/BuildingBlocks.SqlServer/BuildingBlocks.SqlServer.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-          PACKAGE_NAME: UrumiTech.BuildingBlocks
+          PACKAGE_NAME: UrumiTech.BuildingBlocks.SqlServer
           VERSION_REGEX: <AssemblyVersion>(.*)<\/AssemblyVersion>
+

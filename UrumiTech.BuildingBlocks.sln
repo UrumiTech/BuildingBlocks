@@ -10,7 +10,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EDC4CE7-53D5-47BD-8FA5-219FF5BF0CB3}"
 	ProjectSection(SolutionItems) = preProject
 		..\apple-icon-180x180.png = ..\apple-icon-180x180.png
-		build-master.yml = build-master.yml
+		.github\workflows\BuildingBlocks.yml = .github\workflows\BuildingBlocks.yml
+		.github\workflows\BuildingBlocksSqlServer.yml = .github\workflows\BuildingBlocksSqlServer.yml
 		..\LICENSE = ..\LICENSE
 		..\License.md = ..\License.md
 		..\README.md = ..\README.md
